@@ -1,29 +1,32 @@
+
 <template>
     <div class="container-gral">
         <div class="root">
             <img
                 class="foreground"
                 ref="foreground"
-                src="../assets/foto.png"
+                src="../assets/foto.jpeg"
             />
-            <div class="section section-1" ref="first">
-            <div>
+            <div class="section-1">
+            <div v-rellax="{
+      // Rellax Options
+      // See: https://github.com/dixonandmoe/rellax#features
+      speed: -2,
+    }">
                 <h1>Assocaiació Portal8.</h1>
-            </div>
+    </div>
             </div>
             <div class="section section-2" ref="second">
-            <div>
-                <h2>Here's more info</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
-            </div>
+            
             </div>
         </div>
     </div>
 </template>
 
 <script>
+
 export default {
-    name: 'Home'
+    name: 'Home',
 }
 </script>
 
